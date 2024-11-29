@@ -1,145 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Pavitra Classes, Ghoti</title>
-    <meta property=’og:image’ content='https://yashkumat.github.io/coming-soon/LOGO.png’/>
-        <link rel="icon" href="https://yashkumat.github.io/coming-soon/LOGO.png">
-        <meta name="description" content=" Rental Medical Equipments provider.">
-</head>
-<style>
-    .content-area {
-        height: 100vh;
-        width: 100%;
-        text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vital Checkup</title>
 
-    .d-flex {
-        display: flex;
-    }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap"
+        rel="stylesheet">
 
-    .align-items-center {
-        align-items: center;
-    }
-
-    .justify-content-center {
-        justify-content: center;
-    }
-
-    /* make keyframes that tell the start state and the end state of our object */
-    @-webkit-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @-moz-keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
-
-    .fade-in {
-        opacity: 0;
-        /* make things invisible upon start */
-        -webkit-animation: fadeIn ease-in 1;
-        /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-        -moz-animation: fadeIn ease-in 1;
-        animation: fadeIn ease-in 1;
-
-        -webkit-animation-fill-mode: forwards;
-        /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-        -moz-animation-fill-mode: forwards;
-        animation-fill-mode: forwards;
-
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-        animation-duration: 1s;
-
-        &.one {
-            -webkit-animation-delay: 0.7s;
-            -moz-animation-delay: 0.7s;
-            animation-delay: 0.7s;
-        }
-
-        &.two {
-            -webkit-animation-delay: 1.2s;
-            -moz-animation-delay: 1.2s;
-            animation-delay: 1.2s;
-        }
-
-        &.three {
-            -webkit-animation-delay: 1.7s;
-            -moz-animation-delay: 1.7s;
-            animation-delay: 1.7s;
-        }
-    }
-
-    .logo {
-        max-width: 480px;
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
-
-    h3 {
-        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-            "Courier New", monospace;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        font-weight: 100;
-        color: rgba(#000, 0.8);
-    }
-
-    .social {
-        ul {
-            list-style-type: none;
+    <meta property='og:image' content='https://yashkumat.github.io/coming-soon/LOGO.png' />
+    <link rel="icon" href="https://yashkumat.github.io/coming-soon/LOGO.png">
+    <meta name="description" content=" Rental Medical Equipments provider.">
+    <style>
+        * {
+            margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: "Sixtyfour Convergence", sans-serif;
+        }
 
-            li {
-                display: inline-block;
-                margin: 5px;
+        .content-area {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-                a {
-                    img {
-                        width: 28px;
+        .two {
+            margin-top: 32px;
+            animation-name: fadeInAnimation;
+            animation-duration: 2s;
+            animation-delay: 1s;
+        }
 
-                        &:hover {
-                            opacity: 0.7;
-                        }
-                    }
-                }
+        .three {
+            margin-top: 32px;
+        }
+
+        .three:hover {
+            transform: scale(1.5);
+        }
+
+        .one {
+            animation-name: fadeInAnimation;
+            animation-duration: 2s;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
             }
         }
-    }
-</style>
-<div class="content-area d-flex align-items-center justify-content-center">
-    <div>
-        <img src="https://yashkumat.github.io/coming-soon/LOGO.png" alt="" class="logo fade-in one">
-        <h3 class="fade-in two">Coming Soon</h3>
-        <div class="social fade-in three">
-            <ul>
-                <li>
-                    <a href="https://wa.me/+918961275476/" taget="_blank">
-                        <img src="https://yashkumat.github.io/coming-soon/whatsapp.svg" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
+    </style>
+</head>
+
+<body>
+    <div class="content-area">
+        <img src="https://yashkumat.github.io/coming-soon/LOGO.png" alt="" class="logo fade-in one w3-animate-opacity">
+        <h1 class="fade-in two">Coming Soon</h1>
+        <a href="https://wa.me/+918961275476/" class="three" taget="_blank">
+            <img src="https://yashkumat.github.io/coming-soon/whatsapp.svg" width="30px" alt="">
+        </a>
     </div>
-</div>
+</body>
+
+</html>
